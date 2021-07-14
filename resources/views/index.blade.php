@@ -11,16 +11,25 @@
 
     </head>
     <body>
-    <h1>
-
+            
+    <table style="width:100%">
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Immagine</th>
+            <th>Prezzo</th>
+        </tr>
         @foreach($comics as $comic)
-            {{$comic->title }}
+        <tr>
+            <td>{{$comic->title}}</td>
+            <td>{{$comic->description}}</td>
+            <td><img src="{{$comic->thumb}}" alt=""></td>
+            <td>{{$comic->price}}</td>
+        </tr>
         @endforeach
-
-
-    </h1>
+    </table>
 
     <a href="{{route('create')}}">Click me</a>
-    
+
     </body>
 </html>
