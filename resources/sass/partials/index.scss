@@ -1,0 +1,22 @@
+.container {
+    width: 90%;
+    margin: auto;
+    height: 85vh;
+    overflow: auto;
+    margin-bottom: 2rem;
+    border: 2px solid black;
+    table {
+        th {
+            border: 2px solid black;
+            padding: 1rem 0;
+        }
+        td {
+            border: 1px solid grey;
+            text-align: center;
+        }
+        img {
+        height: 150px;
+        }
+    }
+}
+@include link-button;

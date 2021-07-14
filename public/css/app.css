@@ -1,4 +1,86 @@
-body {
-  background-color: darkblue;
+.container {
+  width: 90%;
+  margin: auto;
+  height: 85vh;
+  overflow: auto;
+  margin-bottom: 2rem;
+  border: 2px solid black;
+}
+
+.container table th {
+  border: 2px solid black;
+  padding: 1rem 0;
+}
+
+.container table td {
+  border: 1px solid grey;
+  text-align: center;
+}
+
+.container table img {
+  height: 150px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.button a {
+  padding: 1rem;
+  background-color: rosybrown;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.container_form {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #c4ac8d;
+}
+
+.container_form .button {
+  display: flex;
+  justify-content: center;
+}
+
+.container_form .button a {
+  padding: 1rem;
+  background-color: rosybrown;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.container_form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_form form input {
+  border: 2px solid black;
+}
+
+.container_form form small {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.container_form form .submit {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.container_form form .submit button {
+  padding: 0.5rem 2rem;
 }
 

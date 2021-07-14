@@ -12,6 +12,7 @@
   </head>
   <body>
       
+  <div class="container_form">
     <div class="form-group">
 
       <form action="{{route('store')}}" method="POST">
@@ -32,15 +33,18 @@
         <input type="text" name="price" id="price" class="form-control" placeholder="" aria-describedby="helpId">
         <small id="helpId" class="text-muted">inserisci il prezzo</small>
 
-        <button>Submit</button>
+        <div class="submit">
+          <button>Submit</button>
+        </div>
+        
 
       </form>
-      
+
     </div>
-
-    
-
-    
+      <div class="button">
+        <a href="{{route('index')}}">Go back to DB</a>
+      </div>
+  </div>
     
   </body>
 </html>
