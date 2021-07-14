@@ -1,17 +1,6 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+@extends('layout.app')
 
-    <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-      
+@section('main_content')
   <div class="container_form">
     <div class="form-group">
 
@@ -45,6 +34,4 @@
         <a href="{{route('index')}}">Go back to DB</a>
       </div>
   </div>
-    
-  </body>
-</html>
+@endsection

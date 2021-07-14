@@ -1,5 +1,4 @@
-.container {
-  width: 90%;
+.container_index {
   margin: auto;
   height: 85vh;
   overflow: auto;
@@ -7,17 +6,17 @@
   border: 2px solid black;
 }
 
-.container table th {
+.container_index table th {
   border: 2px solid black;
   padding: 1rem 0;
 }
 
-.container table td {
+.container_index table td {
   border: 1px solid grey;
   text-align: center;
 }
 
-.container table img {
+.container_index table img {
   height: 150px;
 }
 
@@ -28,7 +27,7 @@
 
 .button a {
   padding: 1rem;
-  background-color: rosybrown;
+  background-color: lightblue;
   border: 2px solid black;
   border-radius: 10px;
   text-decoration: none;
@@ -42,7 +41,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 2rem;
-  background-color: #c4ac8d;
+  background-color: azure;
 }
 
 .container_form .button {
@@ -52,7 +51,7 @@
 
 .container_form .button a {
   padding: 1rem;
-  background-color: rosybrown;
+  background-color: lightblue;
   border: 2px solid black;
   border-radius: 10px;
   text-decoration: none;

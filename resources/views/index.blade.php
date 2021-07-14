@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layout.app')
 
-        <title>Laravel</title>
-        <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+@section('main_content')
 
-    </head>
-    <body>
-
-    <div class="container">
+<div class="container_index">
         <table style="width:100%">
             <tr>
                 <th>Title</th>
@@ -34,7 +24,4 @@
     <div class="button">
         <a href="{{route('create')}}">Add New Comic</a>
     </div>
-    
-
-    </body>
-</html>
+@endsection
