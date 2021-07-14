@@ -5,19 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
-
+        
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
     </head>
     <body>
     <h1>
+
         @foreach($comics as $comic)
             {{$comic->title }}
         @endforeach
 
-        <a href="{{route('create')}}">Click me</a>
 
     </h1>
+
+    <a href="{{route('create')}}">Click me</a>
+    
     </body>
 </html>
