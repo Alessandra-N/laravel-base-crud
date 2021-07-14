@@ -40,7 +40,7 @@ class ComicController extends Controller
         $comic->title = $request->title;
         $comic->description = $request->description;
         $comic->thumb = $request->thumb;
-        $comic->price = $request->title;
+        $comic->price = $request->price;
         $comic->save();
 
         return redirect('comic/create');
