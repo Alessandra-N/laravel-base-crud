@@ -18,8 +18,8 @@
                 <td><img src="{{$comic->thumb}}" alt=""></td>
                 <td>{{$comic->price}}$</td>
                 <td>
-                    <a href="{{route('show', $comic->id)}}">View</a> 
-                    | <a href="{{route('edit', $comic->id)}}">Edit</a> 
+                    <a href="{{route('comics.show', $comic->id)}}">View</a> 
+                    | <a href="{{route('comics.edit', $comic->id)}}">Edit</a> 
                     | Delete</td>
             </tr>
             @endforeach
@@ -27,6 +27,6 @@
     </div>
 
     <div class="button">
-        <a href="{{route('create')}}">Add New Comic</a>
+        <a href="{{route('comics.create')}}">Add New Comic</a>
     </div>
 @endsection
