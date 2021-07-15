@@ -14,12 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'ComicController@index')->name('index');
-Route::get('/comic', 'ComicController@index')->name('index');
 Route::get('/comic/create', 'ComicController@create')->name('create');
 Route::post('/comic', 'ComicController@store')->name('store');
 Route::get('/comic/{comics}/show', 'ComicController@show')->name('show');
 Route::get('/comic/{comics}/edit', 'ComicController@edit')->name('edit');
-Route::get('/comic/{comics}/update', 'ComicController@update')->name('update');
-Route::get('/comic/{comics}/destroy', 'ComicController@destroy')->name('destroy');
+Route::put('/comic/{comics}/update', 'ComicController@update')->name('update');
+Route::delete('/comic/{comics}/destroy', 'ComicController@destroy')->name('destroy');
 
 // Route::resource('comics', 'ComicController');
