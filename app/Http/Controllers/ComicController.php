@@ -54,7 +54,6 @@ class ComicController extends Controller
      */
     public function show(Comics $comics)
     {
-        ddd($comics);
         return view('show', compact('comics'));
     }
     
@@ -67,7 +66,6 @@ class ComicController extends Controller
      */
     public function edit(Comics $comics)
     {
-        ddd($comics->id);
         return view('edit', compact('comics'));
     }
 

@@ -4,7 +4,7 @@
   <div class="container_form">
     <div class="form-group">
 
-      <form action="{{route('update'), $comics->id}}" method="POST">
+      <form action="{{route('edit'), $comics->id}}" method="POST">
         {{ csrf_field() }}
         @method('PUT')
         <label for=""></label>
