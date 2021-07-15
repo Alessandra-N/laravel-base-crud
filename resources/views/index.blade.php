@@ -9,6 +9,7 @@
                 <th>Description</th>
                 <th>Immagine</th>
                 <th>Prezzo</th>
+                <th>Azioni</th>
             </tr>
             @foreach($comics as $comic)
             <tr>
@@ -16,6 +17,8 @@
                 <td>{{$comic->description}}</td>
                 <td><img src="{{$comic->thumb}}" alt=""></td>
                 <td>{{$comic->price}}$</td>
+                <td>
+                    <a href="{{route('show', $comic->id)}}">View</a> | Edit | Delete</td>
             </tr>
             @endforeach
         </table>
