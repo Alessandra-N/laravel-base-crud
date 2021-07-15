@@ -18,7 +18,9 @@
                 <td><img src="{{$comic->thumb}}" alt=""></td>
                 <td>{{$comic->price}}$</td>
                 <td>
-                    <a href="{{route('show', $comic->id)}}">View</a> | Edit | Delete</td>
+                    <a href="{{route('show', $comic->id)}}">View</a> 
+                    | <a href="{{route('edit', $comic->id)}}">Edit</a> 
+                    | Delete</td>
             </tr>
             @endforeach
         </table>
