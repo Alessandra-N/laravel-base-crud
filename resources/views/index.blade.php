@@ -19,8 +19,14 @@
                 <td>{{$comic->price}}$</td>
                 <td>
                     <a href="{{route('show', $comic->id)}}">View</a> 
-                    | <a href="{{route('edit', $comic->id)}}">Edit</a> 
-                    | Delete</td>
+                    | <a href="{{route('edit', $comic->id)}}">Edit</a>
+                    <form action="{{route('destroy', $comic->id)}}" method="post" onsubmit="return confirm('vuoi davvero cancellare questo fumetto?')">
+                        @method('delete')
+                        @csrf
+                        <button class="btn btn-danger btn-sm">Destroy</button>
+                    </form>
+                     
+                </td>
             </tr>
             @endforeach
         </table>

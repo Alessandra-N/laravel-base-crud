@@ -2,8 +2,19 @@
 
 @section('main_content')
 
-<h1>Fumetto</h1>
-<h1>{{$comics->title}}</h1>
-<h1>{{$comics->description}}</h1>
+<div class="show_container">
+
+    <h1>{{$comics->title}}</h1>
+    <img src="{{$comics->thumb}}" alt="">
+    <p>{{$comics->description}}</p>
+    <h2>Price: {{$comics->price}}$</h2>
+
+</div>
+
+<div class="button">
+    <a href="{{route('index')}}">Go back to index</a>
+</div>
+
+
 
 @endsection

@@ -8,13 +8,20 @@
         th {
             border: 2px solid black;
             padding: 1rem 0;
+            &:first-child,
+            &:last-child {
+                width: 10%;
+            }
         }
         td {
             border: 1px solid grey;
             text-align: center;
+            button {
+                margin-top: 1rem;
+            }
         }
         img {
-        height: 150px;
+        width: 150px;
         }
     }
 }
